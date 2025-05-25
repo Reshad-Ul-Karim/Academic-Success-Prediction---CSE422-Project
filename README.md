@@ -21,6 +21,11 @@ The primary goal is to develop and compare different machine learning models to 
 - **Target Classes**: 3 categories (Graduate, Dropout, Enrolled)
 - **File**: `academic_success_dataset.csv`
 
+### Class Distribution
+![Class Distribution](Images/class%20distribution.png)
+
+The dataset shows the distribution of target classes, providing insights into the balance of academic outcomes.
+
 ### Key Features
 The dataset includes diverse features categorized as follows:
 
@@ -31,6 +36,11 @@ The dataset includes diverse features categorized as follows:
 - Nationality
 - International student status
 
+![Gender Distribution](Images/Gender.png)
+![Marital Status](Images/marital%20status.png)
+![International Students](Images/International.png)
+![Nationality Distribution](Images/Nationality.png)
+
 #### **Academic Background**
 - Application mode and order
 - Course information
@@ -38,16 +48,32 @@ The dataset includes diverse features categorized as follows:
 - Daytime/evening attendance
 - Admission grade
 
+![Application Mode](Images/application%20mode.png)
+![Course Distribution](Images/course.png)
+![Previous Qualification](Images/previous%20qualification.png)
+![Daytime/Evening Attendance](Images/daytime:evening%20attendance.png)
+
 #### **Family Background**
 - Mother's and Father's qualifications
 - Mother's and Father's occupations
 - Educational special needs
 - Displaced status
 
+![Fathers Qualification](Images/Fathers%20qualification.png)
+![Mothers Qualification](Images/Mothers%20qualification.png)
+![Fathers Occupation](Images/fathers%20occupation.png)
+![Mothers Occupation](Images/mothers%20occupation.png)
+![Educational Special Needs](Images/Educational%20special%20needs.png)
+![Displaced Status](Images/Displaced.png)
+
 #### **Financial Factors**
 - Debtor status
 - Tuition fees up to date
 - Scholarship holder status
+
+![Debtor Status](Images/Debtor.png)
+![Tuition Fees](Images/Tution%20fees.png)
+![Scholarship Holder](Images/Scholarship%20holder.png)
 
 #### **Economic Indicators**
 - Unemployment rate
@@ -58,6 +84,17 @@ The dataset includes diverse features categorized as follows:
 - **Graduate**: Students who successfully completed their program
 - **Dropout**: Students who left the program before completion
 - **Enrolled**: Students currently active in the program
+
+## 🔍 Exploratory Data Analysis
+
+### Data Quality Analysis
+![Outliers Detection](Images/outliers.png)
+![Box Plot Analysis](Images/box%20plot.png)
+
+### Feature Correlation Analysis
+![Correlation Matrix](Images/correlation%20matrix.png)
+
+The correlation matrix reveals relationships between different features and helps identify potential multicollinearity issues.
 
 ## 🔬 Methodology
 
@@ -80,11 +117,15 @@ The dataset includes diverse features categorized as follows:
 - **Optimizer**: Adam optimizer
 - **Performance**: ~62% accuracy
 
+![Neural Network Confusion Matrix](Images/neural%20network%20cm.png)
+
 #### 2. **Random Forest Classifier**
 - **Type**: Ensemble learning method
 - **Features**: Multiple decision trees with voting
 - **Advantages**: Handles overfitting, feature importance ranking
 - **Performance**: ~63% accuracy
+
+![Random Forest Confusion Matrix](Images/Random%20forest%20Cm.png)
 
 #### 3. **XGBoost (Extreme Gradient Boosting)**
 - **Type**: Gradient boosting framework
@@ -92,11 +133,15 @@ The dataset includes diverse features categorized as follows:
 - **Features**: Advanced regularization, handling missing values
 - **Performance**: ~63% accuracy
 
+![XGBoost Confusion Matrix](Images/XGboost%20cm.png)
+
 #### 4. **K-Nearest Neighbors (KNN)**
 - **Type**: Instance-based learning
 - **Features**: Distance-based classification
 - **Considerations**: Sensitive to feature scaling
 - **Performance**: ~54% accuracy
+
+![KNN Confusion Matrix](Images/KNN%20cm.png)
 
 #### 5. **Decision Tree Classifier**
 - **Type**: Tree-based learning
@@ -104,11 +149,15 @@ The dataset includes diverse features categorized as follows:
 - **Visualization**: Tree structure analysis
 - **Performance**: ~52% accuracy
 
+![Decision Tree Confusion Matrix](Images/Decision%20tree%20cm.png)
+
 #### 6. **Logistic Regression**
 - **Type**: Linear classification model
 - **Features**: Probabilistic output, baseline model
 - **Implementation**: Multi-class classification
 - **Performance**: ~59% accuracy
+
+![Logistic Regression Confusion Matrix](Images/Logistic%20regression.png)
 
 ### Model Evaluation Metrics
 
@@ -124,9 +173,13 @@ The dataset includes diverse features categorized as follows:
 - **AUC Scores**: Area Under the Curve for model comparison
 - **Micro-Average ROC**: Overall performance across all classes
 
+![ROC Curves for All Models](Images/ROC%20Curve%20all%20models.png)
+
 ## 📈 Results Summary
 
 ### Model Performance Comparison
+
+![Model Accuracy Comparison](Images/Model%20Accuracy%20comparison.png)
 
 | Model | Accuracy | Best Features |
 |-------|----------|---------------|
@@ -183,7 +236,14 @@ Academic-Success-Prediction---CSE422-Project/
 ├── README.md                          # Project documentation
 ├── CSE422_Project_(1).ipynb          # Main Jupyter notebook
 ├── academic_success_dataset.csv      # Dataset file
-├── CSE422_Sec16_ID22201594_Reshad Ul Karim.pdf  # Project report
+├── CSE422_Sec16_ID22201594_Reshad_Ul_Karim_compressed.pdf  # Project report
+├── Images/                           # Visualization images
+│   ├── class distribution.png
+│   ├── correlation matrix.png
+│   ├── Model Accuracy comparison.png
+│   ├── ROC Curve all models.png
+│   ├── [confusion matrix images]
+│   └── [feature distribution images]
 └── LICENSE                           # License file
 ```
 
@@ -227,13 +287,47 @@ Academic-Success-Prediction---CSE422-Project/
 
 ## 📊 Visualizations
 
-The project includes comprehensive visualizations:
+The project includes comprehensive visualizations organized into several categories:
+
+### **Data Exploration Visualizations**
 - **Class Distribution**: Target variable balance analysis
-- **Correlation Matrix**: Feature relationship heatmap
-- **Feature Distributions**: Individual feature analysis
-- **Confusion Matrices**: Model prediction accuracy breakdown
-- **ROC Curves**: Model performance comparison
-- **Feature Importance**: Most influential variables
+- **Correlation Matrix**: Feature relationship heatmap with 24 predictor variables
+- **Outlier Detection**: Box plots and statistical analysis for data quality
+- **Feature Distributions**: Individual analysis of all demographic, academic, and financial features
+
+### **Demographic Analysis**
+- Gender distribution across student population
+- Marital status breakdown
+- International vs domestic student ratios
+- Nationality distribution patterns
+
+### **Academic Background Analysis**
+- Application mode preferences
+- Course enrollment patterns
+- Previous qualification levels
+- Daytime vs evening attendance preferences
+
+### **Family Background Analysis**
+- Parents' educational qualifications (both father and mother)
+- Parents' occupational distributions
+- Educational special needs identification
+- Displaced student status
+
+### **Financial Status Analysis**
+- Debtor status distribution
+- Tuition fee payment patterns
+- Scholarship holder identification
+
+### **Model Performance Visualizations**
+- **Confusion Matrices**: Detailed prediction accuracy breakdown for all 6 models:
+  - Neural Network confusion matrix
+  - Random Forest confusion matrix
+  - XGBoost confusion matrix
+  - KNN confusion matrix
+  - Decision Tree confusion matrix
+  - Logistic Regression confusion matrix
+- **ROC Curves**: Comprehensive ROC analysis for all models with AUC scores
+- **Model Accuracy Comparison**: Side-by-side performance comparison chart
 
 ## 🔍 Future Improvements
 
@@ -261,7 +355,6 @@ The project includes comprehensive visualizations:
 ## 👥 Contributors
 
 - **Reshad Ul Karim** - Student ID: 22201594
-- - **Sammam Mahdi** - Student ID: 22201628
 - **Course**: CSE422 - Artificial Intelligence
 - **Section**: 16
 - **Institution**: [University Name]
@@ -281,10 +374,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 For questions or collaboration opportunities:
-- **Email**: reshad.ul.karim@g.bracu.ac.bd
-- - **Email**: sammam.mahdi@g.bracu.ac.bd
-- **GitHub**: [https://github.com/Reshad-Ul-Karim]
-- **GitHub**: [https://github.com/SammamMahdi]
+- **Email**: [student_email@university.edu]
+- **GitHub**: [github_username]
+- **LinkedIn**: [linkedin_profile]
 
 ---
 
