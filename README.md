@@ -261,6 +261,7 @@ The project includes comprehensive visualizations:
 ## 👥 Contributors
 
 - **Reshad Ul Karim** - Student ID: 22201594
+- - **Sammam Mahdi** - Student ID: 22201628
 - **Course**: CSE422 - Artificial Intelligence
 - **Section**: 16
 - **Institution**: [University Name]
@@ -280,9 +281,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 For questions or collaboration opportunities:
-- **Email**: [student_email@university.edu]
-- **GitHub**: [github_username]
-- **LinkedIn**: [linkedin_profile]
+- **Email**: reshad.ul.karim@g.bracu.ac.bd
+- - **Email**: sammam.mahdi@g.bracu.ac.bd
+- **GitHub**: [https://github.com/Reshad-Ul-Karim]
+- **GitHub**: [https://github.com/SammamMahdi]
 
 ---
 
