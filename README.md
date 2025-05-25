@@ -374,9 +374,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 For questions or collaboration opportunities:
-- **Email**: [student_email@university.edu]
-- **GitHub**: [github_username]
-- **LinkedIn**: [linkedin_profile]
+
+- **Contributors**: Reshad Ul Karim, Sammam Mahdi
+- **Emails**: reshad.ul.karim@g.bracu.ac.bd, sammam.mahdi@g.bracu.ac.bd
+
 
 ---
 
