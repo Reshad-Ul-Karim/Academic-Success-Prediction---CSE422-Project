@@ -357,7 +357,7 @@ The project includes comprehensive visualizations organized into several categor
 - **Reshad Ul Karim** - Student ID: 22201594
 - **Course**: CSE422 - Artificial Intelligence
 - **Section**: 16
-- **Institution**: [University Name]
+- **Institution**: BRAC University
 
 ## 📄 License
 
